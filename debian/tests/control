@@ -1,0 +1,34 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets --all-features
+Features: test-name=rust-os-str-bytes:@
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets 
+Features: test-name=librust-os-str-bytes-dev:default
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets --no-default-features --features memchr
+Features: test-name=librust-os-str-bytes-dev:memchr
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets --no-default-features --features print_bytes
+Features: test-name=librust-os-str-bytes-dev:print_bytes
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets --no-default-features --features raw_os_str
+Features: test-name=librust-os-str-bytes-dev:raw_os_str
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets --no-default-features --features uniquote
+Features: test-name=librust-os-str-bytes-dev:uniquote
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test os_str_bytes 6.0.0 --all-targets --no-default-features
+Features: test-name=librust-os-str-bytes-dev:
+Depends: dh-cargo (>= 18), librust-getrandom-0.2+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
